@@ -22,7 +22,7 @@ class Numbers extends Component {
         // 여기서 백서버에 요청을 해서 데이터를 가져오는 거지
         // 이렇게 하면 데이터를 따로 저장할 필요도 없고
         // 매번 가져올 때마다 데이터 서버에서 읽어오니까 항상 데이터도 최신이 되겠지
-        fetch('http://virus-backend-dev.us-east-2.elasticbeanstalk.com')
+        fetch('https://virus-backend-dev.us-east-2.elasticbeanstalk.com')
         .then(res => res.json())
         .then(data => {
           this.setState({
@@ -76,7 +76,7 @@ class Numbers extends Component {
         })
         .catch(err => console.error(err));
 
-        fetch('http://virus-backend-dev.us-east-2.elasticbeanstalk.com/total')
+        fetch('https://virus-backend-dev.us-east-2.elasticbeanstalk.com/total')
         .then(res => res.json())
         .then(data => {
           this.setState({
