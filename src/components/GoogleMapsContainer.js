@@ -45,7 +45,7 @@ class GoogleMapsContainer extends Component {
   
 
   componentDidMount() {
-    fetch('http://virus-backend-dev.us-east-2.elasticbeanstalk.com')
+    fetch('https://d1bl95xn0jtxo3.cloudfront.net/')
     .then(res => res.json())
     .then(data => {
       this.setState({
